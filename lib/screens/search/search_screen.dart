@@ -17,10 +17,11 @@ class SearchScreen extends StatefulWidget {
 }
 
 class _SearchScreenState extends State<SearchScreen> {
+  RecommendationProvider _db = RecommendationProvider();
   bool _isData = false;
   List<Recommendation> _recs = [];
   String filterName = 'All';
-  late final FilterRadioButtons filterButtons = FilterRadioButtons(
+  late final FilterButtonBar filterButtons = FilterButtonBar(
       onFilterPressCallback: (name) {
         setState(() {
           filterName = name;
@@ -35,17 +36,23 @@ class _SearchScreenState extends State<SearchScreen> {
 
     /// Parse the json file and set the recommendations to the newly ripped tracks
     JSONtoRecommendations(
-      finishedData: () {
-        setState(() {
-          _isData = true;
-        });
-      },
       setRecs: (newRecs) {
         setState(() {
           _recs = newRecs;
         });
       },
     );
+
+    _db.open('recommendation_db').then((value) {
+      _db.getSearched().then(
+        (searched) {
+          setState(() {
+            _recs = searched;
+            _isData = true;
+          });
+        },
+      );
+    });
   }
 
   //add a floating action button and when the user submits it runs _createRecommendation

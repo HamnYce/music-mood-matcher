@@ -5,12 +5,12 @@ import 'package:music_mood_matcher/utility/filter_button.dart';
 
 /// Filter radio buttons that uses sharepreferences to store the currently selected index
 /// to stay synchronised with its parent component
-class FilterRadioButtons extends StatefulWidget {
+class FilterButtonBar extends StatefulWidget {
   final void Function(String) onFilterPressCallback;
   late final List<String> filters;
   final String filterPrefKey;
 
-  FilterRadioButtons(
+  FilterButtonBar(
       {super.key,
       required this.onFilterPressCallback,
       required filters_,
@@ -20,10 +20,10 @@ class FilterRadioButtons extends StatefulWidget {
   }
 
   @override
-  State<FilterRadioButtons> createState() => _FilterRadioButtonsState();
+  State<FilterButtonBar> createState() => _FilterButtonBarState();
 }
 
-class _FilterRadioButtonsState extends State<FilterRadioButtons>
+class _FilterButtonBarState extends State<FilterButtonBar>
     with TickerProviderStateMixin {
   int _filterCategoryIndex = 0;
 

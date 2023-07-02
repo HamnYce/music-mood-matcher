@@ -1,0 +1,1750 @@
+{
+  "albums" : {
+    "href" : "https://api.spotify.com/v1/search?query=cheerful&type=album&market=KW&offset=0&limit=10",
+    "items" : [ {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6KhH771vq2X2Aom91nNzpZ"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6KhH771vq2X2Aom91nNzpZ",
+        "id" : "6KhH771vq2X2Aom91nNzpZ",
+        "name" : "FTISLAND",
+        "type" : "artist",
+        "uri" : "spotify:artist:6KhH771vq2X2Aom91nNzpZ"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6CLke5r6LqAyM8Vno1Xfjk"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6CLke5r6LqAyM8Vno1Xfjk",
+      "id" : "6CLke5r6LqAyM8Vno1Xfjk",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b27346d0274f74c94c04aa4c9474",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e0246d0274f74c94c04aa4c9474",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d0000485146d0274f74c94c04aa4c9474",
+        "width" : 64
+      } ],
+      "is_playable" : true,
+      "name" : "Cheerful Sensibility",
+      "release_date" : "2007-06-08",
+      "release_date_precision" : "day",
+      "total_tracks" : 13,
+      "type" : "album",
+      "uri" : "spotify:album:6CLke5r6LqAyM8Vno1Xfjk"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0IKhJd9TPXGxFrJTFDG471"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0IKhJd9TPXGxFrJTFDG471",
+        "id" : "0IKhJd9TPXGxFrJTFDG471",
+        "name" : "Hakuei.K",
+        "type" : "artist",
+        "uri" : "spotify:artist:0IKhJd9TPXGxFrJTFDG471"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1jmGJrssG7VktN5qGkBZuJ"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1jmGJrssG7VktN5qGkBZuJ",
+      "id" : "1jmGJrssG7VktN5qGkBZuJ",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273cf6cdf5d65d87d10509de9d3",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02cf6cdf5d65d87d10509de9d3",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851cf6cdf5d65d87d10509de9d3",
+        "width" : 64
+      } ],
+      "is_playable" : true,
+      "name" : "Cheerful",
+      "release_date" : "2022-09-23",
+      "release_date_precision" : "day",
+      "total_tracks" : 2,
+      "type" : "album",
+      "uri" : "spotify:album:1jmGJrssG7VktN5qGkBZuJ"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1RxbBlFVoaBXidsT1k7SGq"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1RxbBlFVoaBXidsT1k7SGq",
+        "id" : "1RxbBlFVoaBXidsT1k7SGq",
+        "name" : "JIGGY",
+        "type" : "artist",
+        "uri" : "spotify:artist:1RxbBlFVoaBXidsT1k7SGq"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1dIN9kFnKWfaY2HZpbeuHi"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1dIN9kFnKWfaY2HZpbeuHi",
+      "id" : "1dIN9kFnKWfaY2HZpbeuHi",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273dad362bd857546d155da1644",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02dad362bd857546d155da1644",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851dad362bd857546d155da1644",
+        "width" : 64
+      } ],
+      "is_playable" : true,
+      "name" : "Cheerful Serenade",
+      "release_date" : "2023-06-27",
+      "release_date_precision" : "day",
+      "total_tracks" : 2,
+      "type" : "album",
+      "uri" : "spotify:album:1dIN9kFnKWfaY2HZpbeuHi"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1ZzmTycawZ9YbMeiKcfKLL"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1ZzmTycawZ9YbMeiKcfKLL",
+        "id" : "1ZzmTycawZ9YbMeiKcfKLL",
+        "name" : "Vladimir Dubyshkin",
+        "type" : "artist",
+        "uri" : "spotify:artist:1ZzmTycawZ9YbMeiKcfKLL"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/3gLyvxHHjBlClrTGcJNBwr"
+      },
+      "href" : "https://api.spotify.com/v1/albums/3gLyvxHHjBlClrTGcJNBwr",
+      "id" : "3gLyvxHHjBlClrTGcJNBwr",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273d8ed1d0cba571e49082f365c",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02d8ed1d0cba571e49082f365c",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851d8ed1d0cba571e49082f365c",
+        "width" : 64
+      } ],
+      "is_playable" : true,
+      "name" : "Cheerful Pessimist",
+      "release_date" : "2018-12-28",
+      "release_date_precision" : "day",
+      "total_tracks" : 5,
+      "type" : "album",
+      "uri" : "spotify:album:3gLyvxHHjBlClrTGcJNBwr"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/01lzF0kz4osCQXfUDFmOnC"
+        },
+        "href" : "https://api.spotify.com/v1/artists/01lzF0kz4osCQXfUDFmOnC",
+        "id" : "01lzF0kz4osCQXfUDFmOnC",
+        "name" : "Ben Jonovski",
+        "type" : "artist",
+        "uri" : "spotify:artist:01lzF0kz4osCQXfUDFmOnC"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7KQccSlxHaRNIX9eJ1IZMP"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7KQccSlxHaRNIX9eJ1IZMP",
+      "id" : "7KQccSlxHaRNIX9eJ1IZMP",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b27312297f799f2c16897bc35379",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e0212297f799f2c16897bc35379",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d0000485112297f799f2c16897bc35379",
+        "width" : 64
+      } ],
+      "is_playable" : true,
+      "name" : "Cheerful Gecko",
+      "release_date" : "2021-07-04",
+      "release_date_precision" : "day",
+      "total_tracks" : 1,
+      "type" : "album",
+      "uri" : "spotify:album:7KQccSlxHaRNIX9eJ1IZMP"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1WJVNwZkJiTU9YRr6vEGx0"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1WJVNwZkJiTU9YRr6vEGx0",
+        "id" : "1WJVNwZkJiTU9YRr6vEGx0",
+        "name" : "Dip Lewis",
+        "type" : "artist",
+        "uri" : "spotify:artist:1WJVNwZkJiTU9YRr6vEGx0"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0n7KrbMywPYxdUvsj8wNIm"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0n7KrbMywPYxdUvsj8wNIm",
+      "id" : "0n7KrbMywPYxdUvsj8wNIm",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273c130adfdc794ff09ad2f1a40",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02c130adfdc794ff09ad2f1a40",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851c130adfdc794ff09ad2f1a40",
+        "width" : 64
+      } ],
+      "is_playable" : true,
+      "name" : "Cheerful Times",
+      "release_date" : "2022-11-06",
+      "release_date_precision" : "day",
+      "total_tracks" : 1,
+      "type" : "album",
+      "uri" : "spotify:album:0n7KrbMywPYxdUvsj8wNIm"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2SDihplTv3WPrBIwOew0G5"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2SDihplTv3WPrBIwOew0G5",
+        "id" : "2SDihplTv3WPrBIwOew0G5",
+        "name" : "Minim",
+        "type" : "artist",
+        "uri" : "spotify:artist:2SDihplTv3WPrBIwOew0G5"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/3tsS4cMTOLHggPA2NR0CAN"
+      },
+      "href" : "https://api.spotify.com/v1/albums/3tsS4cMTOLHggPA2NR0CAN",
+      "id" : "3tsS4cMTOLHggPA2NR0CAN",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273e4912d5a63e17dc3d58e967f",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02e4912d5a63e17dc3d58e967f",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851e4912d5a63e17dc3d58e967f",
+        "width" : 64
+      } ],
+      "is_playable" : true,
+      "name" : "Cheerful Acoustic Guitar",
+      "release_date" : "2018-08-16",
+      "release_date_precision" : "day",
+      "total_tracks" : 12,
+      "type" : "album",
+      "uri" : "spotify:album:3tsS4cMTOLHggPA2NR0CAN"
+    }, {
+      "album_type" : "compilation",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+        "id" : "0LyfQWJT6nXafLPZqxe9Of",
+        "name" : "Various Artists",
+        "type" : "artist",
+        "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2WzRESMxNmRmZZ1jcDseLN"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2WzRESMxNmRmZZ1jcDseLN",
+      "id" : "2WzRESMxNmRmZZ1jcDseLN",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b2738dd085a584028aa6511d1853",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e028dd085a584028aa6511d1853",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d000048518dd085a584028aa6511d1853",
+        "width" : 64
+      } ],
+      "is_playable" : true,
+      "name" : "Cheerful Machine",
+      "release_date" : "2022-07-22",
+      "release_date_precision" : "day",
+      "total_tracks" : 13,
+      "type" : "album",
+      "uri" : "spotify:album:2WzRESMxNmRmZZ1jcDseLN"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5KJuE0k3pzQFXz4xcNw7QG"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5KJuE0k3pzQFXz4xcNw7QG",
+        "id" : "5KJuE0k3pzQFXz4xcNw7QG",
+        "name" : "Ahamed Rios",
+        "type" : "artist",
+        "uri" : "spotify:artist:5KJuE0k3pzQFXz4xcNw7QG"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2mbd9BPem3gkWZqm5RwnY2"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2mbd9BPem3gkWZqm5RwnY2",
+      "id" : "2mbd9BPem3gkWZqm5RwnY2",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b2732e3557f5dbceaa6f3d9e4e66",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e022e3557f5dbceaa6f3d9e4e66",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d000048512e3557f5dbceaa6f3d9e4e66",
+        "width" : 64
+      } ],
+      "is_playable" : true,
+      "name" : "Cheerful Afternoon",
+      "release_date" : "2023-01-17",
+      "release_date_precision" : "day",
+      "total_tracks" : 1,
+      "type" : "album",
+      "uri" : "spotify:album:2mbd9BPem3gkWZqm5RwnY2"
+    }, {
+      "album_type" : "compilation",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+        "id" : "0LyfQWJT6nXafLPZqxe9Of",
+        "name" : "Various Artists",
+        "type" : "artist",
+        "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0PlRlhyvtVGnnrxhKTSJYa"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0PlRlhyvtVGnnrxhKTSJYa",
+      "id" : "0PlRlhyvtVGnnrxhKTSJYa",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273078e2eb4070ebb4131119671",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02078e2eb4070ebb4131119671",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851078e2eb4070ebb4131119671",
+        "width" : 64
+      } ],
+      "is_playable" : true,
+      "name" : "Cheerful Abyss Selection 2021",
+      "release_date" : "2021-03-29",
+      "release_date_precision" : "day",
+      "total_tracks" : 35,
+      "type" : "album",
+      "uri" : "spotify:album:0PlRlhyvtVGnnrxhKTSJYa"
+    } ],
+    "limit" : 10,
+    "next" : "https://api.spotify.com/v1/search?query=cheerful&type=album&market=KW&offset=10&limit=10",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 16
+  },
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=cheerful&type=artist&market=KW&offset=0&limit=10",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1csudD0lnhqOiFJHb51Ege"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 34
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/1csudD0lnhqOiFJHb51Ege",
+      "id" : "1csudD0lnhqOiFJHb51Ege",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b2731dcc38d272dae1a16a5a045e",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e021dcc38d272dae1a16a5a045e",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d000048511dcc38d272dae1a16a5a045e",
+        "width" : 64
+      } ],
+      "name" : "Cheerful Journey",
+      "popularity" : 26,
+      "type" : "artist",
+      "uri" : "spotify:artist:1csudD0lnhqOiFJHb51Ege"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/52CMuRMdJTppNEmJh5YdDR"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/52CMuRMdJTppNEmJh5YdDR",
+      "id" : "52CMuRMdJTppNEmJh5YdDR",
+      "images" : [ ],
+      "name" : "Cheerful",
+      "popularity" : 2,
+      "type" : "artist",
+      "uri" : "spotify:artist:52CMuRMdJTppNEmJh5YdDR"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5thJNaZQAvYqzsZHwuc5MY"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/5thJNaZQAvYqzsZHwuc5MY",
+      "id" : "5thJNaZQAvYqzsZHwuc5MY",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273648489a2c22b738a5ce6e300",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02648489a2c22b738a5ce6e300",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851648489a2c22b738a5ce6e300",
+        "width" : 64
+      } ],
+      "name" : "Cheerful Spa Days",
+      "popularity" : 2,
+      "type" : "artist",
+      "uri" : "spotify:artist:5thJNaZQAvYqzsZHwuc5MY"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2rwQVBKqI917OkSPK9kqE4"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/2rwQVBKqI917OkSPK9kqE4",
+      "id" : "2rwQVBKqI917OkSPK9kqE4",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b2738b15c1856e077ab12014e5d5",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e028b15c1856e077ab12014e5d5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d000048518b15c1856e077ab12014e5d5",
+        "width" : 64
+      } ],
+      "name" : "Cheerful Office Background Music",
+      "popularity" : 1,
+      "type" : "artist",
+      "uri" : "spotify:artist:2rwQVBKqI917OkSPK9kqE4"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3AADVezjFHZp5xiNsJjqnO"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 6
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3AADVezjFHZp5xiNsJjqnO",
+      "id" : "3AADVezjFHZp5xiNsJjqnO",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273ca756f7033d716d71d1319b4",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02ca756f7033d716d71d1319b4",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851ca756f7033d716d71d1319b4",
+        "width" : 64
+      } ],
+      "name" : "Cheerful Hotel Lobby Music",
+      "popularity" : 1,
+      "type" : "artist",
+      "uri" : "spotify:artist:3AADVezjFHZp5xiNsJjqnO"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3IASVckiTajv2FXlMjY4sx"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 4
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3IASVckiTajv2FXlMjY4sx",
+      "id" : "3IASVckiTajv2FXlMjY4sx",
+      "images" : [ ],
+      "name" : "cheerful",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:3IASVckiTajv2FXlMjY4sx"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0NNoNCNTTl6sAJNFUcWsh7"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0NNoNCNTTl6sAJNFUcWsh7",
+      "id" : "0NNoNCNTTl6sAJNFUcWsh7",
+      "images" : [ ],
+      "name" : "Cheerful Greef",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:0NNoNCNTTl6sAJNFUcWsh7"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3ny4Yh3CsseGMXCfH9HMQ8"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 1
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3ny4Yh3CsseGMXCfH9HMQ8",
+      "id" : "3ny4Yh3CsseGMXCfH9HMQ8",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273f3d1617a46897a6380f4224f",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02f3d1617a46897a6380f4224f",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851f3d1617a46897a6380f4224f",
+        "width" : 64
+      } ],
+      "name" : "Cheerful Relaxing Study Music",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:3ny4Yh3CsseGMXCfH9HMQ8"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0hpdnXHR4i0mNdg718HC93"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 1
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0hpdnXHR4i0mNdg718HC93",
+      "id" : "0hpdnXHR4i0mNdg718HC93",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273998d3460c887f82b5a1ebb8d",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02998d3460c887f82b5a1ebb8d",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851998d3460c887f82b5a1ebb8d",
+        "width" : 64
+      } ],
+      "name" : "Cheerful Morning Music",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:0hpdnXHR4i0mNdg718HC93"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3xJ7tuvvR7A7iM1XjoUtnp"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3xJ7tuvvR7A7iM1XjoUtnp",
+      "id" : "3xJ7tuvvR7A7iM1XjoUtnp",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b2731f1ea6ae3ac037aba8b7ddfd",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e021f1ea6ae3ac037aba8b7ddfd",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d000048511f1ea6ae3ac037aba8b7ddfd",
+        "width" : 64
+      } ],
+      "name" : "Cheerful Lounge Playlist",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:3xJ7tuvvR7A7iM1XjoUtnp"
+    } ],
+    "limit" : 10,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 10
+  },
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=cheerful&type=track&market=KW&offset=0&limit=10",
+    "items" : [ {
+      "album" : {
+        "album_type" : "single",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1RFbFQgjNdi8M4qM5gzgfj"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1RFbFQgjNdi8M4qM5gzgfj",
+          "id" : "1RFbFQgjNdi8M4qM5gzgfj",
+          "name" : "Daily Calm",
+          "type" : "artist",
+          "uri" : "spotify:artist:1RFbFQgjNdi8M4qM5gzgfj"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7jRKQ6G04oCT4O1QA0A5X3"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7jRKQ6G04oCT4O1QA0A5X3",
+        "id" : "7jRKQ6G04oCT4O1QA0A5X3",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273ac874657c9c24a0fc52d6f81",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02ac874657c9c24a0fc52d6f81",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851ac874657c9c24a0fc52d6f81",
+          "width" : 64
+        } ],
+        "is_playable" : true,
+        "name" : "Calm Rain",
+        "release_date" : "2021-06-22",
+        "release_date_precision" : "day",
+        "total_tracks" : 4,
+        "type" : "album",
+        "uri" : "spotify:album:7jRKQ6G04oCT4O1QA0A5X3"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1RFbFQgjNdi8M4qM5gzgfj"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1RFbFQgjNdi8M4qM5gzgfj",
+        "id" : "1RFbFQgjNdi8M4qM5gzgfj",
+        "name" : "Daily Calm",
+        "type" : "artist",
+        "uri" : "spotify:artist:1RFbFQgjNdi8M4qM5gzgfj"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 180000,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "SE6RB2185002"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2BBD54IBeXwbTTsgbeibgI"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2BBD54IBeXwbTTsgbeibgI",
+      "id" : "2BBD54IBeXwbTTsgbeibgI",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Cheerful Rain",
+      "popularity" : 48,
+      "preview_url" : "https://p.scdn.co/mp3-preview/12b37d0688d5974e78437eb7a84e97074e1b1cee?cid=123d01ffd0814bffa5ea54407beb3566",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:2BBD54IBeXwbTTsgbeibgI"
+    }, {
+      "album" : {
+        "album_type" : "single",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5jZeLexrrwGNUy6nv7tzdr"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5jZeLexrrwGNUy6nv7tzdr",
+          "id" : "5jZeLexrrwGNUy6nv7tzdr",
+          "name" : "C4C",
+          "type" : "artist",
+          "uri" : "spotify:artist:5jZeLexrrwGNUy6nv7tzdr"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/71lgDNXGstUnmK0klX8orM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/71lgDNXGstUnmK0klX8orM",
+        "id" : "71lgDNXGstUnmK0klX8orM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273f7934ee4f20895dd1160db9d",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02f7934ee4f20895dd1160db9d",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851f7934ee4f20895dd1160db9d",
+          "width" : 64
+        } ],
+        "is_playable" : true,
+        "name" : "Compliments EP",
+        "release_date" : "2020-08-13",
+        "release_date_precision" : "day",
+        "total_tracks" : 6,
+        "type" : "album",
+        "uri" : "spotify:album:71lgDNXGstUnmK0klX8orM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5jZeLexrrwGNUy6nv7tzdr"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5jZeLexrrwGNUy6nv7tzdr",
+        "id" : "5jZeLexrrwGNUy6nv7tzdr",
+        "name" : "C4C",
+        "type" : "artist",
+        "uri" : "spotify:artist:5jZeLexrrwGNUy6nv7tzdr"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/63jcfRONBb5zV2iKLp4cXN"
+        },
+        "href" : "https://api.spotify.com/v1/artists/63jcfRONBb5zV2iKLp4cXN",
+        "id" : "63jcfRONBb5zV2iKLp4cXN",
+        "name" : "Ai Means Love.",
+        "type" : "artist",
+        "uri" : "spotify:artist:63jcfRONBb5zV2iKLp4cXN"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 173100,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBKQU2075745"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0W3q7LsG5m2jOEv6Sf1aPr"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0W3q7LsG5m2jOEv6Sf1aPr",
+      "id" : "0W3q7LsG5m2jOEv6Sf1aPr",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Cheerful",
+      "popularity" : 19,
+      "preview_url" : "https://p.scdn.co/mp3-preview/5d6a73650814a3a4adb11d0fc0466ec71874edae?cid=123d01ffd0814bffa5ea54407beb3566",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:0W3q7LsG5m2jOEv6Sf1aPr"
+    }, {
+      "album" : {
+        "album_type" : "single",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1RxbBlFVoaBXidsT1k7SGq"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1RxbBlFVoaBXidsT1k7SGq",
+          "id" : "1RxbBlFVoaBXidsT1k7SGq",
+          "name" : "JIGGY",
+          "type" : "artist",
+          "uri" : "spotify:artist:1RxbBlFVoaBXidsT1k7SGq"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1dIN9kFnKWfaY2HZpbeuHi"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1dIN9kFnKWfaY2HZpbeuHi",
+        "id" : "1dIN9kFnKWfaY2HZpbeuHi",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273dad362bd857546d155da1644",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02dad362bd857546d155da1644",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851dad362bd857546d155da1644",
+          "width" : 64
+        } ],
+        "is_playable" : true,
+        "name" : "Cheerful Serenade",
+        "release_date" : "2023-06-27",
+        "release_date_precision" : "day",
+        "total_tracks" : 2,
+        "type" : "album",
+        "uri" : "spotify:album:1dIN9kFnKWfaY2HZpbeuHi"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1RxbBlFVoaBXidsT1k7SGq"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1RxbBlFVoaBXidsT1k7SGq",
+        "id" : "1RxbBlFVoaBXidsT1k7SGq",
+        "name" : "JIGGY",
+        "type" : "artist",
+        "uri" : "spotify:artist:1RxbBlFVoaBXidsT1k7SGq"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 36000,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QZMEP2378152"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3YsS8neydJg1YCxycMX3Qk"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3YsS8neydJg1YCxycMX3Qk",
+      "id" : "3YsS8neydJg1YCxycMX3Qk",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Cheerful Serenade",
+      "popularity" : 46,
+      "preview_url" : "https://p.scdn.co/mp3-preview/81fe172d1e2b01ec52d26baa5ca23a1a4efb84ac?cid=123d01ffd0814bffa5ea54407beb3566",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:3YsS8neydJg1YCxycMX3Qk"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1lBnm3edbDJ7KbWSHzSGQP"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1lBnm3edbDJ7KbWSHzSGQP",
+          "id" : "1lBnm3edbDJ7KbWSHzSGQP",
+          "name" : "mabanua",
+          "type" : "artist",
+          "uri" : "spotify:artist:1lBnm3edbDJ7KbWSHzSGQP"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4Sk69efTwCAPXa66m9AgDJ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4Sk69efTwCAPXa66m9AgDJ",
+        "id" : "4Sk69efTwCAPXa66m9AgDJ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27355eb2848de6d4841e0aef7e9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0255eb2848de6d4841e0aef7e9",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485155eb2848de6d4841e0aef7e9",
+          "width" : 64
+        } ],
+        "is_playable" : true,
+        "name" : "MEGALOBOX2ORIGINAL SOUNDTRACK",
+        "release_date" : "2021-06-28",
+        "release_date_precision" : "day",
+        "total_tracks" : 38,
+        "type" : "album",
+        "uri" : "spotify:album:4Sk69efTwCAPXa66m9AgDJ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1lBnm3edbDJ7KbWSHzSGQP"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1lBnm3edbDJ7KbWSHzSGQP",
+        "id" : "1lBnm3edbDJ7KbWSHzSGQP",
+        "name" : "mabanua",
+        "type" : "artist",
+        "uri" : "spotify:artist:1lBnm3edbDJ7KbWSHzSGQP"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 89589,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "JPN222110909"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/11ayC01mj0aXuLMzqQ0827"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/11ayC01mj0aXuLMzqQ0827",
+      "id" : "11ayC01mj0aXuLMzqQ0827",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Cheerful",
+      "popularity" : 19,
+      "preview_url" : "https://p.scdn.co/mp3-preview/7d56f9dd6ce566010136d25ce707e7e100129049?cid=123d01ffd0814bffa5ea54407beb3566",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:11ayC01mj0aXuLMzqQ0827"
+    }, {
+      "album" : {
+        "album_type" : "single",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/01lzF0kz4osCQXfUDFmOnC"
+          },
+          "href" : "https://api.spotify.com/v1/artists/01lzF0kz4osCQXfUDFmOnC",
+          "id" : "01lzF0kz4osCQXfUDFmOnC",
+          "name" : "Ben Jonovski",
+          "type" : "artist",
+          "uri" : "spotify:artist:01lzF0kz4osCQXfUDFmOnC"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7KQccSlxHaRNIX9eJ1IZMP"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7KQccSlxHaRNIX9eJ1IZMP",
+        "id" : "7KQccSlxHaRNIX9eJ1IZMP",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27312297f799f2c16897bc35379",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0212297f799f2c16897bc35379",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485112297f799f2c16897bc35379",
+          "width" : 64
+        } ],
+        "is_playable" : true,
+        "name" : "Cheerful Gecko",
+        "release_date" : "2021-07-04",
+        "release_date_precision" : "day",
+        "total_tracks" : 1,
+        "type" : "album",
+        "uri" : "spotify:album:7KQccSlxHaRNIX9eJ1IZMP"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/01lzF0kz4osCQXfUDFmOnC"
+        },
+        "href" : "https://api.spotify.com/v1/artists/01lzF0kz4osCQXfUDFmOnC",
+        "id" : "01lzF0kz4osCQXfUDFmOnC",
+        "name" : "Ben Jonovski",
+        "type" : "artist",
+        "uri" : "spotify:artist:01lzF0kz4osCQXfUDFmOnC"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 144105,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "SE6RB2194201"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1Czt8WIBLWwHqRwxvUBnUS"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1Czt8WIBLWwHqRwxvUBnUS",
+      "id" : "1Czt8WIBLWwHqRwxvUBnUS",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Cheerful Gecko",
+      "popularity" : 37,
+      "preview_url" : "https://p.scdn.co/mp3-preview/dced9d1d02f7f0d8b1c11134b919f363f249a33c?cid=123d01ffd0814bffa5ea54407beb3566",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:1Czt8WIBLWwHqRwxvUBnUS"
+    }, {
+      "album" : {
+        "album_type" : "single",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0IKhJd9TPXGxFrJTFDG471"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0IKhJd9TPXGxFrJTFDG471",
+          "id" : "0IKhJd9TPXGxFrJTFDG471",
+          "name" : "Hakuei.K",
+          "type" : "artist",
+          "uri" : "spotify:artist:0IKhJd9TPXGxFrJTFDG471"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1jmGJrssG7VktN5qGkBZuJ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1jmGJrssG7VktN5qGkBZuJ",
+        "id" : "1jmGJrssG7VktN5qGkBZuJ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273cf6cdf5d65d87d10509de9d3",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02cf6cdf5d65d87d10509de9d3",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851cf6cdf5d65d87d10509de9d3",
+          "width" : 64
+        } ],
+        "is_playable" : true,
+        "name" : "Cheerful",
+        "release_date" : "2022-09-23",
+        "release_date_precision" : "day",
+        "total_tracks" : 2,
+        "type" : "album",
+        "uri" : "spotify:album:1jmGJrssG7VktN5qGkBZuJ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0IKhJd9TPXGxFrJTFDG471"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0IKhJd9TPXGxFrJTFDG471",
+        "id" : "0IKhJd9TPXGxFrJTFDG471",
+        "name" : "Hakuei.K",
+        "type" : "artist",
+        "uri" : "spotify:artist:0IKhJd9TPXGxFrJTFDG471"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 340952,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "DEH742221131"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3B0L5UDzNIZy3Hvznr1UV6"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3B0L5UDzNIZy3Hvznr1UV6",
+      "id" : "3B0L5UDzNIZy3Hvznr1UV6",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Cheerful",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/d810a19686033e4df2466996357355944a82fd7a?cid=123d01ffd0814bffa5ea54407beb3566",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:3B0L5UDzNIZy3Hvznr1UV6"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/7L19tYhXerWnAaJZrjZz41"
+          },
+          "href" : "https://api.spotify.com/v1/artists/7L19tYhXerWnAaJZrjZz41",
+          "id" : "7L19tYhXerWnAaJZrjZz41",
+          "name" : "Restaurant Lounge Background Music",
+          "type" : "artist",
+          "uri" : "spotify:artist:7L19tYhXerWnAaJZrjZz41"
+        }, {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/7uL0vB887nPrW7gksbkqQt"
+          },
+          "href" : "https://api.spotify.com/v1/artists/7uL0vB887nPrW7gksbkqQt",
+          "id" : "7uL0vB887nPrW7gksbkqQt",
+          "name" : "Reading Jazz Lounge Background Music",
+          "type" : "artist",
+          "uri" : "spotify:artist:7uL0vB887nPrW7gksbkqQt"
+        }, {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5BVCx8PM4yCayPORiTmmgA"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5BVCx8PM4yCayPORiTmmgA",
+          "id" : "5BVCx8PM4yCayPORiTmmgA",
+          "name" : "James Butler",
+          "type" : "artist",
+          "uri" : "spotify:artist:5BVCx8PM4yCayPORiTmmgA"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7oFOcwN0RinLbGF2X7mu6n"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7oFOcwN0RinLbGF2X7mu6n",
+        "id" : "7oFOcwN0RinLbGF2X7mu6n",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273d7bf059af9ee29bfd8233e2a",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02d7bf059af9ee29bfd8233e2a",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851d7bf059af9ee29bfd8233e2a",
+          "width" : 64
+        } ],
+        "is_playable" : true,
+        "name" : "Cozy Jazz Cafe - Relaxing Soft Jazz Music",
+        "release_date" : "2023-02-11",
+        "release_date_precision" : "day",
+        "total_tracks" : 40,
+        "type" : "album",
+        "uri" : "spotify:album:7oFOcwN0RinLbGF2X7mu6n"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7L19tYhXerWnAaJZrjZz41"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7L19tYhXerWnAaJZrjZz41",
+        "id" : "7L19tYhXerWnAaJZrjZz41",
+        "name" : "Restaurant Lounge Background Music",
+        "type" : "artist",
+        "uri" : "spotify:artist:7L19tYhXerWnAaJZrjZz41"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7uL0vB887nPrW7gksbkqQt"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7uL0vB887nPrW7gksbkqQt",
+        "id" : "7uL0vB887nPrW7gksbkqQt",
+        "name" : "Reading Jazz Lounge Background Music",
+        "type" : "artist",
+        "uri" : "spotify:artist:7uL0vB887nPrW7gksbkqQt"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5BVCx8PM4yCayPORiTmmgA"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5BVCx8PM4yCayPORiTmmgA",
+        "id" : "5BVCx8PM4yCayPORiTmmgA",
+        "name" : "James Butler",
+        "type" : "artist",
+        "uri" : "spotify:artist:5BVCx8PM4yCayPORiTmmgA"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 118285,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "DEWD62200063"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6SbjZSu67Q8XxhB0N0Q0vs"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6SbjZSu67Q8XxhB0N0Q0vs",
+      "id" : "6SbjZSu67Q8XxhB0N0Q0vs",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Cheerful Smile - BGM Mix",
+      "popularity" : 35,
+      "preview_url" : "https://p.scdn.co/mp3-preview/fd7ac6736d2124c79c763aa130a9a873867ccf00?cid=123d01ffd0814bffa5ea54407beb3566",
+      "track_number" : 33,
+      "type" : "track",
+      "uri" : "spotify:track:6SbjZSu67Q8XxhB0N0Q0vs"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3IuZkCGec9ysoFhFmXeA99"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3IuZkCGec9ysoFhFmXeA99",
+          "id" : "3IuZkCGec9ysoFhFmXeA99",
+          "name" : "Majid Nazempour",
+          "type" : "artist",
+          "uri" : "spotify:artist:3IuZkCGec9ysoFhFmXeA99"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7dGfCt4bdm4J2AoBkqRDwf"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7dGfCt4bdm4J2AoBkqRDwf",
+        "id" : "7dGfCt4bdm4J2AoBkqRDwf",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2736c95aedd4426f59f06b81de5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e026c95aedd4426f59f06b81de5",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048516c95aedd4426f59f06b81de5",
+          "width" : 64
+        } ],
+        "is_playable" : true,
+        "name" : "Mystery of the Shore",
+        "release_date" : "2006-05-10",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:7dGfCt4bdm4J2AoBkqRDwf"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3IuZkCGec9ysoFhFmXeA99"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3IuZkCGec9ysoFhFmXeA99",
+        "id" : "3IuZkCGec9ysoFhFmXeA99",
+        "name" : "Majid Nazempour",
+        "type" : "artist",
+        "uri" : "spotify:artist:3IuZkCGec9ysoFhFmXeA99"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1Rdgszam3uMUzr90n3rGgn"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1Rdgszam3uMUzr90n3rGgn",
+        "id" : "1Rdgszam3uMUzr90n3rGgn",
+        "name" : "Pajham Akhavas",
+        "type" : "artist",
+        "uri" : "spotify:artist:1Rdgszam3uMUzr90n3rGgn"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4dG4TNBaHIVVhZGK3bWXcA"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4dG4TNBaHIVVhZGK3bWXcA",
+        "id" : "4dG4TNBaHIVVhZGK3bWXcA",
+        "name" : "Bahar Norouzpour",
+        "type" : "artist",
+        "uri" : "spotify:artist:4dG4TNBaHIVVhZGK3bWXcA"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/63FgEhMYiuj9szGAipEPQQ"
+        },
+        "href" : "https://api.spotify.com/v1/artists/63FgEhMYiuj9szGAipEPQQ",
+        "id" : "63FgEhMYiuj9szGAipEPQQ",
+        "name" : "Sohrab Ramezanzadeh",
+        "type" : "artist",
+        "uri" : "spotify:artist:63FgEhMYiuj9szGAipEPQQ"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 256013,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMFMF1594978"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/04MEHwprKfHwXG1BVsKKB5"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/04MEHwprKfHwXG1BVsKKB5",
+      "id" : "04MEHwprKfHwXG1BVsKKB5",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Cheerful",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/1977b371328a5edde7acfdfe0bd60b9ba739b9b9?cid=123d01ffd0814bffa5ea54407beb3566",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:04MEHwprKfHwXG1BVsKKB5"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/6krqlnDhM8SO8tXbt46BV2"
+          },
+          "href" : "https://api.spotify.com/v1/artists/6krqlnDhM8SO8tXbt46BV2",
+          "id" : "6krqlnDhM8SO8tXbt46BV2",
+          "name" : "IWASHIRO TARO",
+          "type" : "artist",
+          "uri" : "spotify:artist:6krqlnDhM8SO8tXbt46BV2"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3rWHASnUYpgvPp3jIWRzn9"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3rWHASnUYpgvPp3jIWRzn9",
+        "id" : "3rWHASnUYpgvPp3jIWRzn9",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2739bc2d18980f474a1d61f113a",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e029bc2d18980f474a1d61f113a",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048519bc2d18980f474a1d61f113a",
+          "width" : 64
+        } ],
+        "is_playable" : true,
+        "name" : "The Story (Blade & Soul Original Soundtrack)",
+        "release_date" : "2012-08-02",
+        "release_date_precision" : "day",
+        "total_tracks" : 21,
+        "type" : "album",
+        "uri" : "spotify:album:3rWHASnUYpgvPp3jIWRzn9"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6krqlnDhM8SO8tXbt46BV2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6krqlnDhM8SO8tXbt46BV2",
+        "id" : "6krqlnDhM8SO8tXbt46BV2",
+        "name" : "IWASHIRO TARO",
+        "type" : "artist",
+        "uri" : "spotify:artist:6krqlnDhM8SO8tXbt46BV2"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 191186,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "KRA601100910"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2T4AqrcXcftvyr8s0GC6b1"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2T4AqrcXcftvyr8s0GC6b1",
+      "id" : "2T4AqrcXcftvyr8s0GC6b1",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Cheerful Festival",
+      "popularity" : 33,
+      "preview_url" : "https://p.scdn.co/mp3-preview/8e0622be30e8709cdd35199caeca45361b596595?cid=123d01ffd0814bffa5ea54407beb3566",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:2T4AqrcXcftvyr8s0GC6b1"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/4n34M10wtYMrhh5tNsKwnn"
+          },
+          "href" : "https://api.spotify.com/v1/artists/4n34M10wtYMrhh5tNsKwnn",
+          "id" : "4n34M10wtYMrhh5tNsKwnn",
+          "name" : "Megan McDuffee",
+          "type" : "artist",
+          "uri" : "spotify:artist:4n34M10wtYMrhh5tNsKwnn"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0atQbhJGfJlcKXiFEb6V5W"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0atQbhJGfJlcKXiFEb6V5W",
+        "id" : "0atQbhJGfJlcKXiFEb6V5W",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2733222d39d967bbdaabc2c9783",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e023222d39d967bbdaabc2c9783",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048513222d39d967bbdaabc2c9783",
+          "width" : 64
+        } ],
+        "is_playable" : true,
+        "name" : "River City Girls (Original Video Game Soundtrack) [Bonus Tracks]",
+        "release_date" : "2019-11-08",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:0atQbhJGfJlcKXiFEb6V5W"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4n34M10wtYMrhh5tNsKwnn"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4n34M10wtYMrhh5tNsKwnn",
+        "id" : "4n34M10wtYMrhh5tNsKwnn",
+        "name" : "Megan McDuffee",
+        "type" : "artist",
+        "uri" : "spotify:artist:4n34M10wtYMrhh5tNsKwnn"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 64545,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QZHNA1921690"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/18ThBAdaqbPuPSyiZWLijl"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/18ThBAdaqbPuPSyiZWLijl",
+      "id" : "18ThBAdaqbPuPSyiZWLijl",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Cheerful",
+      "popularity" : 2,
+      "preview_url" : "https://p.scdn.co/mp3-preview/a9a2981cf788134025842c74e436918c8d0b956a?cid=123d01ffd0814bffa5ea54407beb3566",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:18ThBAdaqbPuPSyiZWLijl"
+    } ],
+    "limit" : 10,
+    "next" : "https://api.spotify.com/v1/search?query=cheerful&type=track&market=KW&offset=10&limit=10",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 23
+  },
+  "playlists" : {
+    "href" : "https://api.spotify.com/v1/search?query=cheerful&type=playlist&market=KW&offset=0&limit=10",
+    "items" : [ {
+      "collaborative" : false,
+      "description" : "Cheerful Tunes and Happy Music to make you feel good! feat. Kylie Minogue, Jessica Mauboy, Dua Lipa and many more!",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/26aifXMDw6xUY7EQLySHS9"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/26aifXMDw6xUY7EQLySHS9",
+      "id" : "26aifXMDw6xUY7EQLySHS9",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://i.scdn.co/image/ab67706c0000bebb3f7488ca2909e951e917a231",
+        "width" : null
+      } ],
+      "name" : "Cheerful Tunes",
+      "owner" : {
+        "display_name" : "Topsify Australia",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/popmob"
+        },
+        "href" : "https://api.spotify.com/v1/users/popmob",
+        "id" : "popmob",
+        "type" : "user",
+        "uri" : "spotify:user:popmob"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTQyNiw0OWEzNzcxNTVlZDgyODM1YmYwNGZmMGYwOTRjZWYyNzlmN2FiNzk0",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/26aifXMDw6xUY7EQLySHS9/tracks",
+        "total" : 183
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:26aifXMDw6xUY7EQLySHS9"
+    }, {
+      "collaborative" : false,
+      "description" : "Cheerful Uplifting music picked just for you",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/37i9dQZF1EIcqv6dNT3Dgk"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1EIcqv6dNT3Dgk",
+      "id" : "37i9dQZF1EIcqv6dNT3Dgk",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://seed-mix-image.spotifycdn.com/v6/img/desc/Cheerful%20Uplifting/en/large",
+        "width" : null
+      } ],
+      "name" : "Cheerful Uplifting Mix",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTk1NDAsMDAwMDAwMDAzYzkxYzc2Y2U5ODcxYTQxNTFkMzQyZDI4ZWIzY2Y4Ng==",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1EIcqv6dNT3Dgk/tracks",
+        "total" : 50
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:37i9dQZF1EIcqv6dNT3Dgk"
+    }, {
+      "collaborative" : false,
+      "description" : "Cheerful Happy Morning music picked just for you",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/37i9dQZF1EIcEuXCgxBePT"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1EIcEuXCgxBePT",
+      "id" : "37i9dQZF1EIcEuXCgxBePT",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://seed-mix-image.spotifycdn.com/v6/img/desc/Cheerful%20Happy%20Morning/en/large",
+        "width" : null
+      } ],
+      "name" : "Cheerful Happy Morning Mix",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTk1NDAsMDAwMDAwMDBlZWE1Mjk2ZWI5YTgzNGFkZDg0MDNiZjU4ZTU3YzU1Mg==",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1EIcEuXCgxBePT/tracks",
+        "total" : 50
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:37i9dQZF1EIcEuXCgxBePT"
+    }, {
+      "collaborative" : false,
+      "description" : "",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/2y5go1oeh3pfG9KBNcyDkD"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/2y5go1oeh3pfG9KBNcyDkD",
+      "id" : "2y5go1oeh3pfG9KBNcyDkD",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/ab67616d0000b27302ef23e492fb485d08068845ab67616d0000b2732025db071cd9dd7e8023e01eab67616d0000b273707ea5b8023ac77d31756ed4ab67616d0000b273f30d69d58eccbf5415d3742f",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/ab67616d0000b27302ef23e492fb485d08068845ab67616d0000b2732025db071cd9dd7e8023e01eab67616d0000b273707ea5b8023ac77d31756ed4ab67616d0000b273f30d69d58eccbf5415d3742f",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/ab67616d0000b27302ef23e492fb485d08068845ab67616d0000b2732025db071cd9dd7e8023e01eab67616d0000b273707ea5b8023ac77d31756ed4ab67616d0000b273f30d69d58eccbf5415d3742f",
+        "width" : 60
+      } ],
+      "name" : "Cheerful Songs Hindi",
+      "owner" : {
+        "display_name" : "Rhea",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/rpmaster10"
+        },
+        "href" : "https://api.spotify.com/v1/users/rpmaster10",
+        "id" : "rpmaster10",
+        "type" : "user",
+        "uri" : "spotify:user:rpmaster10"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "NDcsYzhjMDhlOWI3MjZjNDdiMGFkMmIzMDYzNjAwZjFlMDMxZWFhMWVjZg==",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/2y5go1oeh3pfG9KBNcyDkD/tracks",
+        "total" : 40
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:2y5go1oeh3pfG9KBNcyDkD"
+    }, {
+      "collaborative" : false,
+      "description" : "A playlist full of happy cheerful songs and music to make you feel good and happy",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/4Hp0GzwtzMsLXITEwU9dhv"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/4Hp0GzwtzMsLXITEwU9dhv",
+      "id" : "4Hp0GzwtzMsLXITEwU9dhv",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://i.scdn.co/image/ab67706c0000bebb3d2ebccee88dd615d11edb20",
+        "width" : null
+      } ],
+      "name" : "Cheerful Songs | Feel Good Music 🙂",
+      "owner" : {
+        "display_name" : "Happy Vibes",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/9saqdc9ax0rehxsiyhydswftg"
+        },
+        "href" : "https://api.spotify.com/v1/users/9saqdc9ax0rehxsiyhydswftg",
+        "id" : "9saqdc9ax0rehxsiyhydswftg",
+        "type" : "user",
+        "uri" : "spotify:user:9saqdc9ax0rehxsiyhydswftg"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "NTMsNDc4N2M2M2MxMDEzNmYyNDdlYjM5NTM1OWEyOWNjODcyZDMxNTI5Yw==",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/4Hp0GzwtzMsLXITEwU9dhv/tracks",
+        "total" : 184
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:4Hp0GzwtzMsLXITEwU9dhv"
+    }, {
+      "collaborative" : false,
+      "description" : "",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/1fF73hY1QzokhWz5RTeoRb"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/1fF73hY1QzokhWz5RTeoRb",
+      "id" : "1fF73hY1QzokhWz5RTeoRb",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://i.scdn.co/image/ab67706c0000bebb31f468f3f0aa9e029e9ac6c6",
+        "width" : null
+      } ],
+      "name" : "Cheerful songs(English)",
+      "owner" : {
+        "display_name" : "Hitika Hemnani",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/a2t4qd015qgqg1vibld6004pk"
+        },
+        "href" : "https://api.spotify.com/v1/users/a2t4qd015qgqg1vibld6004pk",
+        "id" : "a2t4qd015qgqg1vibld6004pk",
+        "type" : "user",
+        "uri" : "spotify:user:a2t4qd015qgqg1vibld6004pk"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTczLGJhNGI1NWUzNmQ3NmQxMzZlYWViMzMyZGYwMWI4OWQ1OWYwZGM4YjY=",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/1fF73hY1QzokhWz5RTeoRb/tracks",
+        "total" : 135
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:1fF73hY1QzokhWz5RTeoRb"
+    }, {
+      "collaborative" : false,
+      "description" : "Cheerful Morning music picked just for you",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/37i9dQZF1EIfouBD8XWGCn"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1EIfouBD8XWGCn",
+      "id" : "37i9dQZF1EIfouBD8XWGCn",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://seed-mix-image.spotifycdn.com/v6/img/desc/Cheerful%20Morning/en/large",
+        "width" : null
+      } ],
+      "name" : "Cheerful Morning Mix",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTk1NDAsMDAwMDAwMDBmZWE2NWZiZWE2NGQ2OTY1YTQ1MDNkOTM2YzY0ZmI0MA==",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1EIfouBD8XWGCn/tracks",
+        "total" : 50
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:37i9dQZF1EIfouBD8XWGCn"
+    }, {
+      "collaborative" : false,
+      "description" : "Bollywood songs to make you happy. Sing along or dance to the beats. Cheers!!!",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/3bQy66sMaRDIUIsS7UQnuO"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/3bQy66sMaRDIUIsS7UQnuO",
+      "id" : "3bQy66sMaRDIUIsS7UQnuO",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://i.scdn.co/image/ab67706c0000bebbfa6aa9b98faa5fe3b8859918",
+        "width" : null
+      } ],
+      "name" : "Cheerful Hindi Music Happy Bollywood Songs",
+      "owner" : {
+        "display_name" : "Jhajharia",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/j4oi6s9bap0vh02v5yztfjqxp"
+        },
+        "href" : "https://api.spotify.com/v1/users/j4oi6s9bap0vh02v5yztfjqxp",
+        "id" : "j4oi6s9bap0vh02v5yztfjqxp",
+        "type" : "user",
+        "uri" : "spotify:user:j4oi6s9bap0vh02v5yztfjqxp"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "NDE3LDAzOWYwMzU4Mzc5NzVjMWZjYzU3Y2U5NjJiYjkwZTJkMThiZGVhYWI=",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/3bQy66sMaRDIUIsS7UQnuO/tracks",
+        "total" : 350
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:3bQy66sMaRDIUIsS7UQnuO"
+    }, {
+      "collaborative" : false,
+      "description" : "Cheerful piano from a variety of artists. ",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/41Pb5RyY4LyrF46ZlpOkYg"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/41Pb5RyY4LyrF46ZlpOkYg",
+      "id" : "41Pb5RyY4LyrF46ZlpOkYg",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/ab67616d0000b273168ecdeb8da4b37c4082a5d8ab67616d0000b2738614740333eae86f7a792ad7ab67616d0000b273cb71b3e668736dcdeec9f792ab67616d0000b273fb891a8708f0323198defd25",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/ab67616d0000b273168ecdeb8da4b37c4082a5d8ab67616d0000b2738614740333eae86f7a792ad7ab67616d0000b273cb71b3e668736dcdeec9f792ab67616d0000b273fb891a8708f0323198defd25",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/ab67616d0000b273168ecdeb8da4b37c4082a5d8ab67616d0000b2738614740333eae86f7a792ad7ab67616d0000b273cb71b3e668736dcdeec9f792ab67616d0000b273fb891a8708f0323198defd25",
+        "width" : 60
+      } ],
+      "name" : "Cheerful Piano ",
+      "owner" : {
+        "display_name" : "Aiden",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/89snjx93uontnmyniftu0fy8b"
+        },
+        "href" : "https://api.spotify.com/v1/users/89snjx93uontnmyniftu0fy8b",
+        "id" : "89snjx93uontnmyniftu0fy8b",
+        "type" : "user",
+        "uri" : "spotify:user:89snjx93uontnmyniftu0fy8b"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "NjksMDhiNTdjOGY0ODc5OTlmNGI3OTIwMzFiNGUyYTYyNTEzZmQ3YTM2Zg==",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/41Pb5RyY4LyrF46ZlpOkYg/tracks",
+        "total" : 39
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:41Pb5RyY4LyrF46ZlpOkYg"
+    }, {
+      "collaborative" : false,
+      "description" : "kpop playlist to listen to when you&#x27;re happy or want to cheer up yourself&#x2F;&#x2F; pic: Seungmin from Stray Kids",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/5tCXwUKoPgwJLAsFvm8P9H"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/5tCXwUKoPgwJLAsFvm8P9H",
+      "id" : "5tCXwUKoPgwJLAsFvm8P9H",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://i.scdn.co/image/ab67706c0000bebba0a4fb90286e7fd58e7a23ef",
+        "width" : null
+      } ],
+      "name" : "Cheerful kpop songs",
+      "owner" : {
+        "display_name" : "mireyahernandez18",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/mireyahernandez18"
+        },
+        "href" : "https://api.spotify.com/v1/users/mireyahernandez18",
+        "id" : "mireyahernandez18",
+        "type" : "user",
+        "uri" : "spotify:user:mireyahernandez18"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MjA3LDJjM2U0NGI1NThjZDhjMzE2M2VkMWNkZTEzYjg3NjQ2YmFiODc1NGI=",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/5tCXwUKoPgwJLAsFvm8P9H/tracks",
+        "total" : 177
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:5tCXwUKoPgwJLAsFvm8P9H"
+    } ],
+    "limit" : 10,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 10
+  }
+}

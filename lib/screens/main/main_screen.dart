@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:music_mood_matcher/models/recommendation/constants.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_provider.dart';
 import 'package:music_mood_matcher/screens/favorites/favorites_screen.dart';
@@ -43,20 +44,32 @@ class _MainScreenState extends State<MainScreen> {
       appBar: AppBar(
         // TODO: make this prettier
         title: Text(_screenTitles.elementAt(_currentIndex)),
+        actions: [
+          ElevatedButton(
+            child: Text('add randoms to seeds'),
+            onPressed: () {
+              var db = RecommendationProvider();
+              db.open(databaseName).then((value) {
+                db.addRandomToSearch();
+                print('add randoms');
+              });
+            },
+          ),
+          ElevatedButton(
+            child: Text('db: delete & seed'),
+            onPressed: () {
+              deleteDatabase(databaseName);
+              var db = RecommendationProvider();
+              db.open(databaseName).then((value) {
+                db.seed();
+                print('seeded');
+              });
+            },
+          ),
+        ],
       ),
       body: PageStorage(
           bucket: _bucket, child: _screenOptions.elementAt(_currentIndex)),
-      // body: TextButton(
-      //   child: Text('reset nigga'),
-      //   onPressed: () {
-      //     deleteDatabase(databaseName);
-      //     var db = RecommendationProvider();
-      //     db.open(databaseName).then((value) {
-      //       db.seed();
-      //       print("seeded");
-      //     });
-      //   },
-      // ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         items: [

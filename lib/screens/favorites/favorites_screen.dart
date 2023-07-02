@@ -21,7 +21,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
   final RecommendationProvider _db = RecommendationProvider();
   bool _loadedFavorites = false;
   String filterName = 'All';
-  late final FilterRadioButtons filterButtons = FilterRadioButtons(
+  late final FilterButtonBar filterButtons = FilterButtonBar(
       onFilterPressCallback: (name) {
         setState(() {
           filterName = name;
