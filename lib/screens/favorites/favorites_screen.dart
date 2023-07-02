@@ -3,7 +3,7 @@ import 'package:music_mood_matcher/models/recommendation/constants.dart';
 import 'package:music_mood_matcher/models/recommendation/recommendation.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_provider.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_tile.dart';
-import 'package:music_mood_matcher/screens/search/widgets/filter_buttons.dart';
+import 'package:music_mood_matcher/utility/widgets/filter_button_bar.dart';
 import 'package:music_mood_matcher/utility/helper.dart';
 
 // TODO: add confirmation dialog to remove something from the favorites to avoid
