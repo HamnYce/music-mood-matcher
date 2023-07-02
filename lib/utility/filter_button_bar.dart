@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:music_mood_matcher/utility/helper.dart';
-import 'package:music_mood_matcher/utility/widgets/filter_button.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:music_mood_matcher/utility/filter_button.dart';
 
 /// Filter radio buttons that uses sharepreferences to store the currently selected index
 /// to stay synchronised with its parent component
 class FilterRadioButtons extends StatefulWidget {
   final void Function(String) onFilterPressCallback;
-  late List<String> filters;
+  late final List<String> filters;
   final String filterPrefKey;
 
   FilterRadioButtons(
       {super.key,
       required this.onFilterPressCallback,
-      required this.filters,
+      required filters_,
       required this.filterPrefKey}) {
     filters = ['All'] +
-        filters.map<String>((s) => basicPluralize(capitalize(s))).toList();
+        filters_.map<String>((s) => basicPluralize(capitalize(s))).toList();
   }
 
   @override

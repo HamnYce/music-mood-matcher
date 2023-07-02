@@ -3,8 +3,8 @@ import 'package:music_mood_matcher/models/recommendation/constants.dart';
 import 'package:music_mood_matcher/models/recommendation/recommendation.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_provider.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_tile.dart';
-import 'package:music_mood_matcher/utility/widgets/filter_button_bar.dart';
-import 'package:music_mood_matcher/utility/widgets/json_to_recommendations.dart';
+import 'package:music_mood_matcher/utility/filter_button_bar.dart';
+import 'package:music_mood_matcher/screens/search/widgets/json_to_recommendations.dart';
 import 'package:music_mood_matcher/screens/text_input/text_input_screen.dart';
 import 'package:music_mood_matcher/utility/helper.dart';
 
@@ -26,7 +26,7 @@ class _SearchScreenState extends State<SearchScreen> {
           filterName = name;
         });
       },
-      filters: categoryTypes,
+      filters_: categoryTypes,
       filterPrefKey: 'filter');
 
   @override

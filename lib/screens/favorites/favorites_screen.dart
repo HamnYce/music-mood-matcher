@@ -3,7 +3,7 @@ import 'package:music_mood_matcher/models/recommendation/constants.dart';
 import 'package:music_mood_matcher/models/recommendation/recommendation.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_provider.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_tile.dart';
-import 'package:music_mood_matcher/utility/widgets/filter_button_bar.dart';
+import 'package:music_mood_matcher/utility/filter_button_bar.dart';
 import 'package:music_mood_matcher/utility/helper.dart';
 
 // TODO: add confirmation dialog to remove something from the favorites to avoid
@@ -27,7 +27,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
           filterName = name;
         });
       },
-      filters: categoryTypes,
+      filters_: categoryTypes,
       filterPrefKey: 'filter');
 
   @override
