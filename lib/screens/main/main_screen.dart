@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:music_mood_matcher/models/recommendation/constants.dart';
+import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_provider.dart';
 import 'package:music_mood_matcher/screens/favorites/favorites_screen.dart';
 import 'package:music_mood_matcher/screens/search/search_screen.dart';
+import 'package:sqflite/sqflite.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -43,6 +46,17 @@ class _MainScreenState extends State<MainScreen> {
       ),
       body: PageStorage(
           bucket: _bucket, child: _screenOptions.elementAt(_currentIndex)),
+      // body: TextButton(
+      //   child: Text('reset nigga'),
+      //   onPressed: () {
+      //     deleteDatabase(databaseName);
+      //     var db = RecommendationProvider();
+      //     db.open(databaseName).then((value) {
+      //       db.seed();
+      //       print("seeded");
+      //     });
+      //   },
+      // ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         items: [

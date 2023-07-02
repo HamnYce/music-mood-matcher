@@ -4,13 +4,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// Filter radio buttons that uses sharepreferences to store the currently selected index
 /// to stay synchronised with its parent component
 class FilterRadioButtons extends StatefulWidget {
-  final void Function(String) setFilterNameCallback;
+  final void Function(String) onFilterPressCallback;
   final List<String> filters;
   final String filterPrefKey;
 
   const FilterRadioButtons(
       {super.key,
-      required this.setFilterNameCallback,
+      required this.onFilterPressCallback,
       required this.filters,
       required this.filterPrefKey});
 
@@ -63,7 +63,6 @@ class _FilterRadioButtonsState extends State<FilterRadioButtons>
     setState(() {
       /// Calls the function inside the parent container (searchScreen)
       /// to see the values in search screen for filtering
-      widget.setFilterNameCallback(widget.filters[index]);
 
       for (int i = 0; i < _controllers.length; i++) {
         /// if button is clicked make it selected color and the rest are deselected
@@ -71,6 +70,7 @@ class _FilterRadioButtonsState extends State<FilterRadioButtons>
       }
       _filterCategoryIndex = index;
       _saveCategoryFilterPrefs();
+      widget.onFilterPressCallback(widget.filters[index]);
     });
   }
 

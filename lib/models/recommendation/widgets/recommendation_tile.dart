@@ -63,7 +63,7 @@ class _RecommendationTileState extends State<RecommendationTile> {
               widget.database.update(widget.rec);
             } else {
               // TODO: implement this
-              throw "implement FAVICONCLICK in SEARCH SCREEN";
+              print('implement FAVICONCLICK in SEARCH SCREEN');
             }
             widget.favIconPressCallback();
           });

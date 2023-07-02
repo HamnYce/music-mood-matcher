@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:music_mood_matcher/models/recommendation/constants.dart';
 import 'package:music_mood_matcher/models/recommendation/recommendation.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_provider.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_tile.dart';
-import 'package:music_mood_matcher/screens/search/widgets/filter_buttons.dart';
 import 'package:music_mood_matcher/screens/search/widgets/json_to_recommendations.dart';
 import 'package:music_mood_matcher/screens/text_input/text_input_screen.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:music_mood_matcher/utility/helper.dart';
+import 'package:music_mood_matcher/utility/mixins/filterable.dart';
 
 // TODO: we can store the latest results as a JSON (if user favorites move them to the next screen)
 class SearchScreen extends StatefulWidget {
@@ -17,31 +15,17 @@ class SearchScreen extends StatefulWidget {
   State<SearchScreen> createState() => _SearchScreenState();
 }
 
-class _SearchScreenState extends State<SearchScreen> {
+class _SearchScreenState extends State<SearchScreen> with FilterableMixin {
   bool _isData = false;
   List<Recommendation> _recs = [];
-  late FilterRadioButtons _filterButtons = _filterButtons = FilterRadioButtons(
-    setFilterNameCallback: (name) => setState(() {
-      _filterCategoryName = name;
-    }),
-    filters: filters,
-    filterPrefKey: _filterPrefKey,
-  );
-  final String _filterPrefKey = '_filterCategoryIndex';
-  String _filterCategoryName = 'All';
-  List<String> filters = ['All'] +
-      categoryTypes.map((s) => basicPluralize(capitalize(s))).toList();
-
   @override
   void initState() {
     super.initState();
 
-    SharedPreferences.getInstance().then((prefs) {
-      /// if we have a preference set from previous use then get and set that as our current state
-      if (prefs.getInt(_filterPrefKey) != null) {
-        _filterCategoryName = filters[prefs.getInt(_filterPrefKey)!];
-      }
-    });
+    filterButtonsInit(
+        onPressFilterCallback: (name) => setState(() {
+              filterCategoryName = name;
+            }));
 
     /// Parse the json file and set the recommendations to the newly ripped tracks
     JSONtoRecommendations(
@@ -70,7 +54,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 padding: const EdgeInsets.symmetric(horizontal: 5),
 
                 /// Callback to effect parent widget (this) filtering properties
-                child: _filterButtons),
+                child: filterButtons),
           ),
           _isData
               ? Expanded(
@@ -78,13 +62,15 @@ class _SearchScreenState extends State<SearchScreen> {
                   ...() {
                     List<RecommendationTile> recTiles = [];
                     for (Recommendation rec in _recs) {
-                      if (_filterCategoryName == 'All' ||
-                          normaliseCategory(_filterCategoryName) ==
+                      if (filterCategoryName == 'All' ||
+                          normaliseCategory(filterCategoryName) ==
                               rec.category) {
                         recTiles.add(RecommendationTile(
                           rec: rec,
                           database: RecommendationProvider(),
-                          favIconPressCallback: () {},
+                          favIconPressCallback: () {
+                            setState(() {});
+                          },
                         ));
                       }
                     }
