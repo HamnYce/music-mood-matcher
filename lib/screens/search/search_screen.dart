@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:music_mood_matcher/models/recommendation/constants.dart';
 import 'package:music_mood_matcher/models/recommendation/recommendation.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_provider.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_tile.dart';
+import 'package:music_mood_matcher/screens/search/widgets/filter_buttons.dart';
 import 'package:music_mood_matcher/screens/search/widgets/json_to_recommendations.dart';
 import 'package:music_mood_matcher/screens/text_input/text_input_screen.dart';
 import 'package:music_mood_matcher/utility/helper.dart';
-import 'package:music_mood_matcher/utility/mixins/filterable.dart';
 
 // TODO: we can store the latest results as a JSON (if user favorites move them to the next screen)
 class SearchScreen extends StatefulWidget {
@@ -15,17 +16,22 @@ class SearchScreen extends StatefulWidget {
   State<SearchScreen> createState() => _SearchScreenState();
 }
 
-class _SearchScreenState extends State<SearchScreen> with FilterableMixin {
+class _SearchScreenState extends State<SearchScreen> {
   bool _isData = false;
   List<Recommendation> _recs = [];
+  String filterName = 'All';
+  late final FilterRadioButtons filterButtons = FilterRadioButtons(
+      onFilterPressCallback: (name) {
+        setState(() {
+          filterName = name;
+        });
+      },
+      filters: categoryTypes,
+      filterPrefKey: 'filter');
+
   @override
   void initState() {
     super.initState();
-
-    filterButtonsInit(
-        onPressFilterCallback: (name) => setState(() {
-              filterCategoryName = name;
-            }));
 
     /// Parse the json file and set the recommendations to the newly ripped tracks
     JSONtoRecommendations(
@@ -62,9 +68,8 @@ class _SearchScreenState extends State<SearchScreen> with FilterableMixin {
                   ...() {
                     List<RecommendationTile> recTiles = [];
                     for (Recommendation rec in _recs) {
-                      if (filterCategoryName == 'All' ||
-                          normaliseCategory(filterCategoryName) ==
-                              rec.category) {
+                      if (filterName == 'All' ||
+                          normaliseCategory(filterName) == rec.category) {
                         recTiles.add(RecommendationTile(
                           rec: rec,
                           database: RecommendationProvider(),

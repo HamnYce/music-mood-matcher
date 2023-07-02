@@ -1,18 +1,62 @@
 import 'package:flutter/material.dart';
+import 'package:music_mood_matcher/utility/helper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+class FilterRadioButton extends StatefulWidget {
+  final Function(int) onButtonPress;
+  final int index;
+  final String name;
+  final AnimationController controller;
+
+  const FilterRadioButton(
+      {super.key,
+      required this.onButtonPress,
+      required this.index,
+      required this.controller,
+      required this.name});
+
+  @override
+  State<FilterRadioButton> createState() => _FilterRadioButtonState();
+}
+
+class _FilterRadioButtonState extends State<FilterRadioButton>
+    with SingleTickerProviderStateMixin {
+  late Animation<Color?> animation =
+      ColorTween(begin: Colors.white, end: Colors.black)
+          .animate(widget.controller);
+
+  @override
+  void initState() {
+    super.initState();
+
+    animation.addListener(() => setState(() {}));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: () => widget.onButtonPress(widget.index),
+      style: ElevatedButton.styleFrom(backgroundColor: animation.value),
+      child: Text(widget.name),
+    );
+  }
+}
 
 /// Filter radio buttons that uses sharepreferences to store the currently selected index
 /// to stay synchronised with its parent component
 class FilterRadioButtons extends StatefulWidget {
   final void Function(String) onFilterPressCallback;
-  final List<String> filters;
+  late List<String> filters;
   final String filterPrefKey;
 
-  const FilterRadioButtons(
+  FilterRadioButtons(
       {super.key,
       required this.onFilterPressCallback,
       required this.filters,
-      required this.filterPrefKey});
+      required this.filterPrefKey}) {
+    filters = ['All'] +
+        filters.map<String>((s) => basicPluralize(capitalize(s))).toList();
+  }
 
   @override
   State<FilterRadioButtons> createState() => _FilterRadioButtonsState();
@@ -21,8 +65,44 @@ class FilterRadioButtons extends StatefulWidget {
 class _FilterRadioButtonsState extends State<FilterRadioButtons>
     with TickerProviderStateMixin {
   int _filterCategoryIndex = 0;
-  final List<AnimationController> _controllers = [];
-  final List<Animation<Color?>> _animations = [];
+
+  late final List<AnimationController> _controllers = List.generate(
+    widget.filters.length,
+    (index) => AnimationController(
+      duration: const Duration(milliseconds: 200),
+      vsync: this,
+    ),
+  );
+
+  late List<FilterRadioButton> buttons =
+      List.generate(widget.filters.length, (index) {
+    return FilterRadioButton(
+        onButtonPress: (index) {
+          setState(() {
+            _filterCategoryIndex = index;
+            updateSelection();
+            updateAnimation();
+            _saveCategoryFilterPrefs();
+          });
+        },
+        controller: _controllers[index],
+        index: index,
+        name: widget.filters[index]);
+  });
+
+  void updateSelection() {
+    widget.onFilterPressCallback(widget.filters[_filterCategoryIndex]);
+  }
+
+  void updateAnimation() {
+    for (int i = 0; i < _controllers.length; i++) {
+      if (i == _filterCategoryIndex) {
+        _controllers[i].forward();
+      } else {
+        _controllers[i].reverse();
+      }
+    }
+  }
 
   void _saveCategoryFilterPrefs() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -33,24 +113,6 @@ class _FilterRadioButtonsState extends State<FilterRadioButtons>
   void initState() {
     super.initState();
 
-    /// Initialise controllers and animations for each filter button
-    for (int i = 0; i < widget.filters.length; i++) {
-      _controllers.add(AnimationController(
-        duration: const Duration(milliseconds: 200),
-        vsync: this,
-      ));
-
-      /// Let animation values lerp between colors not 0..1
-      _animations.add(ColorTween(begin: Colors.white, end: Colors.black)
-          .animate(_controllers[i]));
-
-      /// select the index of the already chosen one
-
-      /// let listener call setState to show the animation
-      _animations[i].addListener(() => setState(() {}));
-    }
-
-    /// Loading the preferences if (any are saved)
     SharedPreferences.getInstance().then((prefs) {
       if (prefs.getInt(widget.filterPrefKey) != null) {
         _filterCategoryIndex = prefs.getInt(widget.filterPrefKey)!;
@@ -59,48 +121,17 @@ class _FilterRadioButtonsState extends State<FilterRadioButtons>
     });
   }
 
-  void onButtonPress(int index) {
-    setState(() {
-      /// Calls the function inside the parent container (searchScreen)
-      /// to see the values in search screen for filtering
-
-      for (int i = 0; i < _controllers.length; i++) {
-        /// if button is clicked make it selected color and the rest are deselected
-        (i == index) ? _controllers[i].forward() : _controllers[i].reverse();
-      }
-      _filterCategoryIndex = index;
-      _saveCategoryFilterPrefs();
-      widget.onFilterPressCallback(widget.filters[index]);
-    });
-  }
-
-  Widget filterButton(BuildContext context, int index) {
-    return ElevatedButton(
-      onPressed: () => onButtonPress(index),
-      style:
-          // TODO: when we're initialising here we need to set the one that is loaded to the end
-          ElevatedButton.styleFrom(backgroundColor: _animations[index].value),
-      child: Text(widget.filters[index]),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(vertical: 5),
-        itemBuilder: filterButton,
+        itemBuilder: (context, index) {
+          return buttons[index];
+        },
         separatorBuilder: (context, index) => const SizedBox(
               width: 8,
             ),
-        itemCount: 5);
-  }
-
-  @override
-  void dispose() {
-    for (int i = 0; i < _controllers.length; i++) {
-      _controllers[i].removeListener(() {});
-    }
-    super.dispose();
+        itemCount: widget.filters.length);
   }
 }
