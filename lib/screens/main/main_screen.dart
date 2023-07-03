@@ -14,6 +14,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
+  bool debug = false;
   int _currentIndex = 0;
   final PageStorageBucket _bucket = PageStorageBucket();
 
@@ -44,29 +45,35 @@ class _MainScreenState extends State<MainScreen> {
       appBar: AppBar(
         // TODO: make this prettier
         title: Text(_screenTitles.elementAt(_currentIndex)),
-        actions: [
-          ElevatedButton(
-            child: Text('add randoms to seeds'),
-            onPressed: () {
-              var db = RecommendationProvider();
-              db.open(databaseName).then((value) {
-                db.addRandomToSearch();
-                print('add randoms');
-              });
-            },
-          ),
-          ElevatedButton(
-            child: Text('db: delete & seed'),
-            onPressed: () {
-              deleteDatabase(databaseName);
-              var db = RecommendationProvider();
-              db.open(databaseName).then((value) {
-                db.seed();
-                print('seeded');
-              });
-            },
-          ),
-        ],
+        actions: debug
+            ? [
+                ElevatedButton(
+                  child: Text('+ rand search'),
+                  onPressed: () {
+                    var db = RecommendationProvider();
+                    db.open(databaseName).then((value) {
+                      db.addRandomToSearch();
+                      print('add randoms');
+                    });
+                  },
+                ),
+                ElevatedButton(
+                    child: Text('db: reset'),
+                    onPressed: () async {
+                      deleteDatabase(databaseName);
+                      await RecommendationProvider().open(databaseName);
+                    }),
+                ElevatedButton(
+                  child: Text('db: seed'),
+                  onPressed: () {
+                    var db = RecommendationProvider();
+                    db.open(databaseName).then((value) {
+                      db.seed();
+                    });
+                  },
+                ),
+              ]
+            : [],
       ),
       body: PageStorage(
           bucket: _bucket, child: _screenOptions.elementAt(_currentIndex)),

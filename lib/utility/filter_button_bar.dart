@@ -97,4 +97,10 @@ class _FilterButtonBarState extends State<FilterButtonBar>
             ),
         itemCount: widget.filters.length);
   }
+
+  @override
+  void dispose() {
+    _controllers.map((con) => con.dispose()).toList();
+    super.dispose();
+  }
 }

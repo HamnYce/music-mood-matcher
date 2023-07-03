@@ -1,32 +1,20 @@
-import 'dart:convert';
-
-import 'package:flutter/services.dart';
 import 'package:music_mood_matcher/models/recommendation/recommendation.dart';
 
 class JSONtoRecommendations {
-  final void Function(List<Recommendation>) setRecs;
-
-  JSONtoRecommendations({required this.setRecs}) {
-    _jsons();
+  static List<Recommendation> parseJSON(Map<String, dynamic> json) {
+    return _parseRecommendations(json);
   }
 
-  void _jsons() async {
-    String jsonString = await rootBundle.loadString('assets/data/search.json');
-    Map<String, dynamic> json = jsonDecode(jsonString);
-    _parseRecommendations(json);
-  }
-
-  void _parseRecommendations(Map<String, dynamic> json) {
-    List<Recommendation> newRecs = [
+  static List<Recommendation> _parseRecommendations(Map<String, dynamic> json) {
+    return [
       ..._parseItems(json['tracks']),
       ..._parseItems(json['albums']),
       ..._parseItems(json['artists']),
       ..._parseItems(json['playlists'])
     ];
-    setRecs(newRecs);
   }
 
-  List<Recommendation> _parseItems(Map<String, dynamic> json) {
+  static List<Recommendation> _parseItems(Map<String, dynamic> json) {
     List<Recommendation> recs = [];
     for (Map<String, dynamic> item in json['items']) {
       String id = item['id'];

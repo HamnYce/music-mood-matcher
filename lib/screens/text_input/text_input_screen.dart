@@ -1,18 +1,13 @@
 // TODO: implement this
 // TODO:  you could maybe add a search history function but meh, its not part of the requirements
 
-// TODO: need a search bar at the top of the screen
-// TODO:  on hitting enter it takes the user back to the search screen
-// TODO:  search screen should be loading
-// TODO:  once it finishes loading it should display the appropriate results (musics and stuff)
-// TODO:  create a submit button
-
 // TODO: this screen will contain the logic for ripping the request,
 // TODO:  parsing and storing into sqlite and returning back to the main page
 
-// use fade out animation when popping off the navigation stack
+// TODO:
 
 import 'package:flutter/material.dart';
+import 'package:music_mood_matcher/utility/api/spotify/spotify_api.dart';
 
 class TextInputScreen extends StatefulWidget {
   const TextInputScreen({super.key});
@@ -23,6 +18,8 @@ class TextInputScreen extends StatefulWidget {
 
 class _TextInputScreenState extends State<TextInputScreen> {
   final int _maxLength = 50;
+  static const String _hintText = 'What are you feeling right now?';
+  final SpotifyApi spotify = SpotifyApi();
 
   @override
   Widget build(BuildContext context) {
@@ -30,10 +27,12 @@ class _TextInputScreenState extends State<TextInputScreen> {
       body: Center(
         child: TextField(
           maxLength: _maxLength,
-          decoration: const InputDecoration(hintText: "hello world"),
+          decoration: const InputDecoration(hintText: _hintText),
           onSubmitted: (value) {
-            print(value);
-            Navigator.of(context).pop();
+            // print(value);
+            spotify.search(value).then((value) {
+              Navigator.of(context).pop();
+            });
           },
           autofocus: true,
           buildCounter: (context,

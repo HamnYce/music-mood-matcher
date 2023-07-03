@@ -9,7 +9,7 @@ const String columnLiked = 'liked';
 const String createRecommendationTableRawSQL = '''
   CREATE TABLE IF NOT EXISTS $recommendationTableName (
   $columnId TEXT PRIMARY KEY, 
-  $columnThumbnailURL TEXT NOT NULL,
+  $columnThumbnailURL TEXT NULL,
   $columnRecommendationURL TEXT NOT NULL,
   $columnTitle TEXT NOT NULL,
   $columnCategory TEXT NOT NULL,

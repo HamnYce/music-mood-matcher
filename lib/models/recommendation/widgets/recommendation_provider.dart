@@ -4,11 +4,9 @@ import 'package:music_mood_matcher/models/recommendation/recommendation.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:music_mood_matcher/models/recommendation/constants.dart';
 
-// TODO: POTENTIAL: create instance methods to convert the insert/update...
-// TODO: POTENTIAL:   helpers into raw sql statements and use TXNs
-
 class RecommendationProvider {
   late Database _db;
+
   Future open(String path) async {
     _db = await openDatabase(
       path,
@@ -24,6 +22,18 @@ class RecommendationProvider {
     );
   }
 
+  Future insertNewSearched(List<Recommendation> recs) async {
+    _db.transaction((txn) async {
+      await txn.execute('DROP TABLE IF EXISTS $searchTableName;');
+      await txn.execute(createSearchTableRawSQL);
+    });
+
+    for (Recommendation rec in recs) {
+      await insert(rec);
+      await _db.insert(searchTableName, {columnId: rec.id});
+    }
+  }
+
   Future<int> insert(Recommendation rec) async {
     return await _db.insert(recommendationTableName, rec.toMap(),
         conflictAlgorithm: ConflictAlgorithm.replace);
@@ -35,7 +45,7 @@ class RecommendationProvider {
   }
 
   Future<int> update(Recommendation rec) async {
-    return _db.update(
+    return await _db.update(
         recommendationTableName, {columnId: rec.id, columnLiked: rec.liked},
         where: '$columnId == ?',
         whereArgs: [rec.id],
@@ -63,6 +73,7 @@ class RecommendationProvider {
   Future<List<Recommendation>> getSearched() async {
     List<Map<String, Object?>> searchQueryRes =
         await _db.query(searchTableName, columns: [columnId]);
+
     List<String> searchedIds =
         searchQueryRes.map((e) => e[columnId] as String).toList();
 
@@ -82,14 +93,13 @@ class RecommendationProvider {
   }
 
   Future addRandomToSearch() async {
-    print(await _db.query(searchTableName, columns: [columnId], limit: 20));
-    // var result = await _db.query(recommendationTableName,
-    //     columns: [columnId], limit: 20);
-    // var ids = result.map((e) => e[columnId]).toList();
-    // print(ids);
-    // ids
-    //     .map((id) async => await _db.insert(searchTableName, {columnId: id},
-    //         conflictAlgorithm: ConflictAlgorithm.replace))
-    //     .toList();
+    var result = await _db.query(recommendationTableName,
+        columns: [columnId], limit: 20, orderBy: columnTitle);
+    var ids = result.map((e) => e[columnId]).toList();
+    print(ids);
+    ids
+        .map((id) async => await _db.insert(searchTableName, {columnId: id},
+            conflictAlgorithm: ConflictAlgorithm.replace))
+        .toList();
   }
 }

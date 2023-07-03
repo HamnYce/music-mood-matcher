@@ -17,7 +17,7 @@ class SearchScreen extends StatefulWidget {
 }
 
 class _SearchScreenState extends State<SearchScreen> {
-  RecommendationProvider _db = RecommendationProvider();
+  final RecommendationProvider _db = RecommendationProvider();
   bool _isData = false;
   List<Recommendation> _recs = [];
   String filterName = 'All';
@@ -34,16 +34,7 @@ class _SearchScreenState extends State<SearchScreen> {
   void initState() {
     super.initState();
 
-    /// Parse the json file and set the recommendations to the newly ripped tracks
-    JSONtoRecommendations(
-      setRecs: (newRecs) {
-        setState(() {
-          _recs = newRecs;
-        });
-      },
-    );
-
-    _db.open('recommendation_db').then((value) {
+    _db.open(databaseName).then((value) {
       _db.getSearched().then(
         (searched) {
           setState(() {
@@ -79,7 +70,7 @@ class _SearchScreenState extends State<SearchScreen> {
                           normaliseCategory(filterName) == rec.category) {
                         recTiles.add(RecommendationTile(
                           rec: rec,
-                          database: RecommendationProvider(),
+                          database: _db,
                           favIconPressCallback: () {
                             setState(() {});
                           },
@@ -97,9 +88,22 @@ class _SearchScreenState extends State<SearchScreen> {
         bottom: 10,
         right: 20,
         child: FloatingActionButton(
-          onPressed: () {
-            Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => const TextInputScreen()));
+          onPressed: () async {
+            Navigator.of(context)
+                .push(MaterialPageRoute(
+                    builder: (context) => const TextInputScreen()))
+                .then((value) {
+              setState(() {
+                _db.getSearched().then(
+                  (searched) {
+                    setState(() {
+                      _recs = searched;
+                      _isData = true;
+                    });
+                  },
+                );
+              });
+            });
           },
           child: const Icon(Icons.search),
         ),

@@ -26,12 +26,6 @@ class RecommendationTile extends StatefulWidget {
 }
 
 class _RecommendationTileState extends State<RecommendationTile> {
-  @override
-  void initState() {
-    super.initState();
-    widget.database.open(databaseName);
-  }
-
   Widget likedWidget() {
     return widget.rec.liked == 1
         ? const Icon(Icons.favorite)
