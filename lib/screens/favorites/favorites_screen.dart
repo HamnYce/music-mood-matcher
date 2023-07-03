@@ -69,11 +69,14 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                         recTiles.add(RecommendationTile(
                           rec: rec,
                           database: _db,
-                          favIconPressCallback: () => setState(() {
-                            _db.getFavorites().then(
-                                  (favs) => favorites = favs,
-                                );
-                          }),
+                          favIconPressCallback: () {
+                            // show alert dialog to remove favorites
+                            setState(() {
+                              _db.getFavorites().then(
+                                    (favs) => favorites = favs,
+                                  );
+                            });
+                          },
                         ));
                       }
                     }
