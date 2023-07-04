@@ -47,7 +47,7 @@ class _MainScreenState extends State<MainScreen> {
         actions: debug
             ? [
                 ElevatedButton(
-                  child: Text('+ rand search'),
+                  child: const Text('+ rand search'),
                   onPressed: () {
                     var db = RecommendationProvider();
                     db.open(databaseName).then((value) {
@@ -57,13 +57,13 @@ class _MainScreenState extends State<MainScreen> {
                   },
                 ),
                 ElevatedButton(
-                    child: Text('db: reset'),
+                    child: const Text('db: reset'),
                     onPressed: () async {
                       deleteDatabase(databaseName);
                       await RecommendationProvider().open(databaseName);
                     }),
                 ElevatedButton(
-                  child: Text('db: seed'),
+                  child: const Text('db: seed'),
                   onPressed: () {
                     var db = RecommendationProvider();
                     db.open(databaseName).then((value) {
