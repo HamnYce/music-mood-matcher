@@ -42,7 +42,6 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // TODO: make this prettier
         title: Text(_screenTitles.elementAt(_currentIndex)),
         actions: debug
             ? [
