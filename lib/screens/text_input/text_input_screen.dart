@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_mood_matcher/utility/api/huggingface/roberta_emotion_analysis.dart';
 import 'package:music_mood_matcher/utility/api/spotify/spotify_api.dart';
 
 class TextInputScreen extends StatefulWidget {
@@ -12,6 +13,7 @@ class _TextInputScreenState extends State<TextInputScreen> {
   final int _maxLength = 50;
   static const String _hintText = 'What are you feeling right now?';
   final SpotifyApi spotify = SpotifyApi();
+  final RobertaGoEmotionsApi robertaEmotionApi = RobertaGoEmotionsApi();
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +22,12 @@ class _TextInputScreenState extends State<TextInputScreen> {
         child: TextField(
           maxLength: _maxLength,
           decoration: const InputDecoration(hintText: _hintText),
-          onSubmitted: (value) {
+          onSubmitted: (userInput) {
             // print(value);
-            spotify.search(value).then((value) {
-              Navigator.of(context).pop();
+            robertaEmotionApi.query(userInput).then((top3Emotions) {
+              spotify.search(top3Emotions).then((value) {
+                Navigator.of(context).pop();
+              });
             });
           },
           autofocus: true,
