@@ -77,7 +77,7 @@ class SpotifyToken {
     _token = token;
     _expireDate = expireDate;
 
-    await prefs!.setString(_tokenKey, token);
-    await prefs!.setInt(_expireDateKey, expireDate);
+    prefs!.setString(_tokenKey, token);
+    prefs!.setInt(_expireDateKey, expireDate);
   }
 }
