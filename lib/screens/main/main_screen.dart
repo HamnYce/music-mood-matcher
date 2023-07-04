@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:music_mood_matcher/models/recommendation/constants.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_provider.dart';
 import 'package:music_mood_matcher/screens/favorites/favorites_screen.dart';

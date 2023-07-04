@@ -4,7 +4,6 @@ import 'package:music_mood_matcher/models/recommendation/recommendation.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_provider.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_tile.dart';
 import 'package:music_mood_matcher/utility/filter_button_bar.dart';
-import 'package:music_mood_matcher/screens/search/widgets/json_to_recommendations.dart';
 import 'package:music_mood_matcher/screens/text_input/text_input_screen.dart';
 import 'package:music_mood_matcher/utility/helper.dart';
 

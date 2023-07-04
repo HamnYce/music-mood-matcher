@@ -16,12 +16,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Music Mood Matcher',
-        darkTheme: ThemeData.dark(),
-        theme: ThemeData(
-          colorSchemeSeed: Colors.purple,
-          useMaterial3: true,
-        ),
-        home: const MainScreen());
+      title: 'Music Mood Matcher',
+      darkTheme: ThemeData.dark(),
+      theme: ThemeData(
+        colorSchemeSeed: Colors.purple,
+        useMaterial3: true,
+      ),
+      home: const MainScreen(),
+    );
   }
 }

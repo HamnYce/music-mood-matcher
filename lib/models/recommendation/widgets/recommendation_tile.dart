@@ -1,7 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:music_mood_matcher/models/recommendation/constants.dart';
 import 'package:music_mood_matcher/models/recommendation/recommendation.dart';
 import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_provider.dart';
 import 'package:music_mood_matcher/utility/helper.dart';
