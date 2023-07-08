@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 
 class RobertaGoEmotionsApi {
+  static const int emotionCountConst = 5;
   final Uri apiUri = Uri(
       scheme: 'https',
       host: 'api-inference.huggingface.co',
@@ -30,11 +31,10 @@ class RobertaGoEmotionsApi {
 
   dynamic parseInference(String inference) {
     List<dynamic> json = jsonDecode(inference)[0];
-    List<dynamic> top3Scores = json.sublist(0, 3);
-    List<String> top3Labels =
-        top3Scores.map((value) => value['label'] as String).toList();
+    List<dynamic> topScores = json.sublist(0, emotionCountConst);
+    List<String> topLabels =
+        topScores.map((value) => value['label'] as String).toList();
 
-    print(top3Labels);
-    return top3Labels.join(' ');
+    return topLabels.join(' ');
   }
 }
