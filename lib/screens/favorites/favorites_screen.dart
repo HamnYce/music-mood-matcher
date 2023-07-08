@@ -72,9 +72,14 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                           favIconPressCallback: () {
                             // show alert dialog to remove favorites
                             setState(() {
-                              _db.getFavorites().then(
-                                    (favs) => favorites = favs,
-                                  );
+                              rec.likeUnlike();
+                              _db.update(rec).then((value) {
+                                setState(() {
+                                  _db.getFavorites().then(
+                                        (favs) => favorites = favs,
+                                      );
+                                });
+                              });
                             });
                           },
                         ));

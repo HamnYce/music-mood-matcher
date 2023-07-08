@@ -70,7 +70,9 @@ class _SearchScreenState extends State<SearchScreen> {
                         recTiles.add(RecommendationTile(
                           rec: rec,
                           database: _db,
-                          favIconPressCallback: () {
+                          favIconPressCallback: () async {
+                            rec.likeUnlike();
+                            await _db.update(rec);
                             setState(() {});
                           },
                         ));

@@ -5,8 +5,6 @@ import 'package:music_mood_matcher/models/recommendation/widgets/recommendation_
 import 'package:music_mood_matcher/utility/helper.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-// FIXME: will break under search screen favoriting at the moment
-
 class RecommendationTile extends StatefulWidget {
   final Recommendation rec;
   final RecommendationProvider database;
@@ -52,11 +50,8 @@ class _RecommendationTileState extends State<RecommendationTile> {
       trailing: IconButton(
         icon: likedWidget(),
         onPressed: () {
-          setState(() {
-            widget.rec.likeUnlike();
-            widget.database.update(widget.rec);
-            widget.favIconPressCallback();
-          });
+          widget.favIconPressCallback();
+          setState(() {});
         },
       ),
       onTap: () {
