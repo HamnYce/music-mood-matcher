@@ -19,11 +19,11 @@ class _SearchScreenState extends State<SearchScreen> {
   final RecommendationProvider _db = RecommendationProvider();
   bool _isData = false;
   List<Recommendation> _recs = [];
-  String filterName = 'All';
-  late final FilterButtonBar filterButtons = FilterButtonBar(
+  String _filterName = 'All';
+  late final FilterButtonBar _filterButtons = FilterButtonBar(
       onFilterPressCallback: (name) {
         setState(() {
-          filterName = name;
+          _filterName = name;
         });
       },
       filters_: categoryTypes,
@@ -57,7 +57,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 padding: const EdgeInsets.symmetric(horizontal: 5),
 
                 /// Callback to effect parent widget (this) filtering properties
-                child: filterButtons),
+                child: _filterButtons),
           ),
           _isData
               ? Expanded(
@@ -65,8 +65,8 @@ class _SearchScreenState extends State<SearchScreen> {
                   ...() {
                     List<RecommendationTile> recTiles = [];
                     for (Recommendation rec in _recs) {
-                      if (filterName == 'All' ||
-                          normaliseCategory(filterName) == rec.category) {
+                      if (_filterName == 'All' ||
+                          normaliseCategory(_filterName) == rec.category) {
                         recTiles.add(RecommendationTile(
                           rec: rec,
                           database: _db,

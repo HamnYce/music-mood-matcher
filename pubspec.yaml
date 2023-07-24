@@ -41,6 +41,7 @@ dependencies:
   url_launcher: ^6.1.11
   http: ^0.13.6
   path_provider: ^2.0.15
+  flex_color_scheme: ^7.1.2
 
 dev_dependencies:
   flutter_test:

@@ -26,11 +26,17 @@ class RobertaGoEmotionsApi {
     http.Response res =
         await http.post(apiUri, headers: headers, body: {'inputs': userInput});
 
-    return parseInference(res.body);
+    if (res.statusCode == 200) {
+      return parseInference(res.body);
+    } else {
+      print(res);
+      return parseInference('');
+    }
   }
 
   dynamic parseInference(String inference) {
-    List<dynamic> json = jsonDecode(inference)[0];
+    List<dynamic>? json = jsonDecode(inference)[0];
+    if (json == null) return [];
     List<dynamic> topScores = json.sublist(0, emotionCountConst);
     List<String> topLabels =
         topScores.map((value) => value['label'] as String).toList();

@@ -6,16 +6,18 @@ import 'package:music_mood_matcher/utility/filter_button.dart';
 /// Filter radio buttons that uses sharepreferences to store the currently selected index
 /// to stay synchronised with its parent component
 class FilterButtonBar extends StatefulWidget {
-  final void Function(String) onFilterPressCallback;
-  late final List<String> filters;
-  final String filterPrefKey;
+  final void Function(String) _onFilterPressCallback;
+  late final List<String> _filters;
+  final String _filterPrefKey;
 
   FilterButtonBar(
       {super.key,
-      required this.onFilterPressCallback,
+      required void Function(String) onFilterPressCallback,
       required filters_,
-      required this.filterPrefKey}) {
-    filters = ['All'] +
+      required String filterPrefKey})
+      : _filterPrefKey = filterPrefKey,
+        _onFilterPressCallback = onFilterPressCallback {
+    _filters = ['All'] +
         filters_.map<String>((s) => basicPluralize(capitalize(s))).toList();
   }
 
@@ -28,15 +30,15 @@ class _FilterButtonBarState extends State<FilterButtonBar>
   int _filterCategoryIndex = 0;
 
   late final List<AnimationController> _controllers = List.generate(
-    widget.filters.length,
+    widget._filters.length,
     (index) => AnimationController(
       duration: const Duration(milliseconds: 200),
       vsync: this,
     ),
   );
 
-  late List<FilterRadioButton> buttons =
-      List.generate(widget.filters.length, (index) {
+  late final List<FilterRadioButton> _buttons =
+      List.generate(widget._filters.length, (index) {
     return FilterRadioButton(
         onButtonPress: (index) {
           setState(() {
@@ -48,11 +50,11 @@ class _FilterButtonBarState extends State<FilterButtonBar>
         },
         controller: _controllers[index],
         index: index,
-        name: widget.filters[index]);
+        name: widget._filters[index]);
   });
 
   void updateSelection() {
-    widget.onFilterPressCallback(widget.filters[_filterCategoryIndex]);
+    widget._onFilterPressCallback(widget._filters[_filterCategoryIndex]);
   }
 
   void updateAnimation() {
@@ -67,7 +69,7 @@ class _FilterButtonBarState extends State<FilterButtonBar>
 
   void _saveCategoryFilterPrefs() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setInt(widget.filterPrefKey, _filterCategoryIndex);
+    await prefs.setInt(widget._filterPrefKey, _filterCategoryIndex);
   }
 
   @override
@@ -75,8 +77,8 @@ class _FilterButtonBarState extends State<FilterButtonBar>
     super.initState();
 
     SharedPreferences.getInstance().then((prefs) {
-      if (prefs.getInt(widget.filterPrefKey) != null) {
-        _filterCategoryIndex = prefs.getInt(widget.filterPrefKey)!;
+      if (prefs.getInt(widget._filterPrefKey) != null) {
+        _filterCategoryIndex = prefs.getInt(widget._filterPrefKey)!;
       }
 
       updateSelection();
@@ -90,12 +92,12 @@ class _FilterButtonBarState extends State<FilterButtonBar>
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(vertical: 5),
         itemBuilder: (context, index) {
-          return buttons[index];
+          return _buttons[index];
         },
         separatorBuilder: (context, index) => const SizedBox(
               width: 8,
             ),
-        itemCount: widget.filters.length);
+        itemCount: widget._filters.length);
   }
 
   @override
