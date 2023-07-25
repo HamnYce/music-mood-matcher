@@ -17,7 +17,6 @@ class SpotifyToken {
       scheme: 'https',
       host: 'accounts.spotify.com',
       pathSegments: ['api', 'token']);
-  bool _isSecretLoaded = false;
 
   SpotifyToken() {
     rootBundle.loadString('assets/secrets/spotify_secrets.json').then((value) {
@@ -26,8 +25,6 @@ class SpotifyToken {
       clientSecret = json['client_secret'];
       clientId = json['client_id'];
       grantType = json['grant_type'];
-
-      _isSecretLoaded = true;
 
       SharedPreferences.getInstance().then((prefs) {
         this.prefs = prefs;
