@@ -24,7 +24,7 @@ class SpotifyApi {
     http.Response res = await http
         .get(searchUri, headers: {'Authorization': 'Bearer ${await _token}'});
     if (res.statusCode == 200) {
-      Map<String, dynamic> json = await jsonDecode(res.body);
+      Map<String, dynamic> json = jsonDecode(res.body);
       List<Recommendation> recs = JSONtoRecommendations.parseJSON(json);
       await _db.insertNewSearched(recs);
       return;

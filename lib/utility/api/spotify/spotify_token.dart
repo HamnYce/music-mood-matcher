@@ -17,17 +17,28 @@ class SpotifyToken {
       scheme: 'https',
       host: 'accounts.spotify.com',
       pathSegments: ['api', 'token']);
+  bool _isSecretLoaded = false;
 
   SpotifyToken() {
-    SharedPreferences.getInstance().then((prefs) {
-      this.prefs = prefs;
-      _loadToken();
-    });
     rootBundle.loadString('assets/secrets/spotify_secrets.json').then((value) {
       Map<String, dynamic> json = jsonDecode(value);
+
       clientSecret = json['client_secret'];
       clientId = json['client_id'];
       grantType = json['grant_type'];
+
+      _isSecretLoaded = true;
+
+      SharedPreferences.getInstance().then((prefs) {
+        this.prefs = prefs;
+
+        if (this.prefs!.containsKey(_tokenKey)) {
+          _token = this.prefs!.getString(_tokenKey)!;
+          _expireDate = this.prefs!.getInt(_expireDateKey)!;
+        } else {
+          _refreshToken();
+        }
+      });
     });
   }
 
@@ -39,14 +50,7 @@ class SpotifyToken {
     }
   }
 
-  Future _loadToken() async {
-    if (prefs!.containsKey(_tokenKey)) {
-      _token = prefs!.getString(_tokenKey)!;
-      _expireDate = prefs!.getInt(_expireDateKey)!;
-    } else {
-      await _refreshToken();
-    }
-  }
+  Future _loadToken() async {}
 
   bool _isTokenExpired() {
     return _expireDate == 0 ||
@@ -77,7 +81,7 @@ class SpotifyToken {
     _token = token;
     _expireDate = expireDate;
 
-    prefs!.setString(_tokenKey, token);
-    prefs!.setInt(_expireDateKey, expireDate);
+    await prefs!.setString(_tokenKey, token);
+    await prefs!.setInt(_expireDateKey, expireDate);
   }
 }
