@@ -1,6 +1,8 @@
 # Music Mood Matcher
 
-Music Mood Matcher is a music recommendation service that suggests music based on the mood of the user. It leverages advanced natural language processing and music streaming APIs to provide personalized music recommendations.
+Music Mood Matcher is a music recommendation service that suggests music based on the mood of the user. It leverages advanced natural language processing and music streaming APIs to provide personalized music recommendations. (this has been developed with ios as the target platform)
+
+![Overview](images/overview.jpeg)
 
 ## Features
 
