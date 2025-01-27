@@ -65,7 +65,7 @@ class SpotifyToken {
       await _saveToken(json['access_token']);
       return _token;
     }
-    throw 'Could not refresh the token';
+    throw 'Could not refresh the token ${res.body}';
   }
 
   Future _saveToken(String token) async {
