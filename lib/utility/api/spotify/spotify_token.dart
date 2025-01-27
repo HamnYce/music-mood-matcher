@@ -47,8 +47,6 @@ class SpotifyToken {
     }
   }
 
-  Future _loadToken() async {}
-
   bool _isTokenExpired() {
     return _expireDate == 0 ||
         DateTime.now().millisecondsSinceEpoch > _expireDate;
